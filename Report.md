@@ -42,7 +42,7 @@ First, I obtained a free API Key from VirusTotal. Then, I configured the Wazuh M
 </integration>
 ```
 
-![alt text](<image-1.png>)
+![alt text](<images/image-1.png>)
 
 (I replaced `API_KEY_HERE` with my actual API key)
 
@@ -58,7 +58,7 @@ On the Windows machine, I set up File Integrity Monitoring (FIM). I focused on t
 </syscheck>
 ```
 
-![alt text](<image.png>)
+![alt text](<images/image.png>)
 
 (I replaced `USER_NAME` with my actual Windows username)
 
@@ -82,7 +82,7 @@ I wrote a custom rule to map this detection to the MITRE ATT\&CK framework (T100
 </group>
 ```
 
-![alt text](<image-3.png>)
+![alt text](<images/image-3.png>)
 
 ### Step 4: Active Response
 
@@ -122,7 +122,7 @@ echo %DATE% %TIME% - MALWARE DETECTED! QUARANTINE >> "C:\Program Files (x86)\oss
 shutdown /s /f /t 3 /c "ALERT: MALWARE DETECTED! SYSTEM SHUTDOWN IN 3 SECONDS"
 ```
 
-![alt text](<image-4.png>)
+![alt text](<images/image-4.png>)
 
 -----
 
@@ -136,6 +136,6 @@ To test my lab, I downloaded a Mimikatz sample into the Downloads folder.
 2. The Warning Box appeared on the Windows screen
 3. The system successfully shut down to isolate the threat
 
-![alt text](<image-5.png>)
+![alt text](<images/image-5.png>)
 
-![alt text](<image-2.png>)
+![alt text](<images/image-2.png>)
